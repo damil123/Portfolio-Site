@@ -27,6 +27,13 @@
     <p>.</p>
   </main>
 
+  <footer>
+    <p>© <span id="year"></span> · <a href="mailto:damil.randhawa@ontariotechu.net">Damil Randhawa</a></p>
+  </footer>
 
+  <script>
+    // Automatically updates the year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
