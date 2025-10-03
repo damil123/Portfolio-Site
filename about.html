@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me | Damil Portfolio</title>
+
+  <!-- CSS stylesheets -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/mobile.css" media="(max-width: 480px)">
   <link rel="stylesheet" href="css/tablet.css" media="(min-width: 481px) and (max-width: 768px)">
@@ -22,14 +24,31 @@
 
   <main>
     <h2>About Me</h2>
-    <p>....................</p>
+
+    <p>
+      Hello! My name is Damil Randhawa. I am studying Technology Management at 
+      Ontario Tech University. I enjoy programming, working with data, and 
+      building small projects to improve my skills.
+    </p>
+
+    <!-- My photo -->
+    <img src="assets/img/DSC01041.jpg" alt="Photo of Damil Randhawa" width="250">
+
+    <!-- My video -->
+    <h3>Real-life video of me programming this assignment</h3>
+    <video controls width="400">
+      <source src="assets/video/Tiny Student vs. CSS.mp4" type="video/mp4">
+    </video>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> · <a href="mailto:damil.randhawa@ontariotechu.net">Damil Randhawa</a></p>
+    <p>&copy; <span id="year"></span> · 
+      <a href="mailto:damil.randhawa@ontariotechu.net">Damil Randhawa</a>
+    </p>
   </footer>
 
   <script>
+    // Updates the year 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
