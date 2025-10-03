@@ -1,15 +1,17 @@
 <!DOCTYPE html>
+<!-- Responsive metags -->
 <html lang="en">
 <head>
   <meta charset="UTF-8"> 
+  <!-- used viewport for mobile responsiveness found from https://www.w3schools.com/tags/tag_meta.asp -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Damil Portfolio</title>
 
-  <!-- Add CSS Files with dimensions -->
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)">
-  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 601px) and (max-width: 992px)">
-  <link rel="stylesheet" href="css/laptop.css" media="(min-width: 993px)">
+<!-- linked to css files and added fluid diemensions for each kind of device -->
+ <link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/mobile.css" media="(max-width: 480px)">
+<link rel="stylesheet" href="css/tablet.css" media="(min-width: 481px) and (max-width: 768px)">
+<link rel="stylesheet" href="css/laptop.css" media="(min-width: 769px)">
 </head>
 <body>
   <header>
@@ -32,7 +34,7 @@
   </footer>
 
   <script>
-    // Automatically updates the year
+    //Automatically updates the year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
