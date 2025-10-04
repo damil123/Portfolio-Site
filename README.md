@@ -4,7 +4,7 @@
 ## Project Overview  
 This project is a portfolio site created for my Web & Script Programming course. The site showcases my background, projects, and contact information.  
 
-The portfolio consists of four main pages:  
+The portfolio contains four main pages:  
 - **Home** – landing page with introduction  
 - **About Me** – photo and video  
 - **Projects** – list of projects with descriptions  
