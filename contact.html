@@ -21,15 +21,32 @@
   </header>
 
   <main>
-    <h2>Contact Me</h2>
-    <p>.............contact form </p>
+    <h2>Get in Touch 📲</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+      <label for="phone">Cell Phone #:</label>
+      <input id="phone" name="phone" type="tel" placeholder="123-456-7890" required>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> · <a href="mailto:damil.randhawa@ontariotechu.net">Damil Randhawa</a></p>
+    <p>&copy; <span id="year"></span> · 
+      <a href="mailto:damil.randhawa@ontariotechu.net">Damil Randhawa</a>
+    </p>
   </footer>
 
   <script>
+    // Updates the  year 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>

@@ -1,1 +1,131 @@
+/* Base Styles for Portfolio Site */
+
+/* Apply to the whole page */
+body {
+  font-family: Arial, sans-serif;   /* The text font I chose */
+  margin: 0;                        /* Removes default browser margins */
+  padding: 0;                       /* Removes default browser padding */
+  background-color: #f5f5dc;        /* Beige background from adobe*/
+  color: #333333;                   /* Dark gray text font */
+  line-height: 1.6;                 /* Spacing between lines */
+}
+
+/* Headings (h1, h2, h3) use a serif font and green color */
+h1, h2, h3 {
+  font-family: Georgia, serif;      /* Formal font for headings */
+  color: #013220;                   /* Dark green colour from adobe */
+}
+
+/* Header at top */
+header {
+  background: linear-gradient(90deg, #013220, #025f3d); /* Green gradient */
+  color: white;                     
+  padding: 15px;                    
+  text-align: center;               
+}
+header h1 {
+  margin: 0;                        /* Remove extra space around heading */
+}
+
+/* Navigation links (menu items) */
+nav a {
+  color: #f5f5dc;                   /* Same beige for uniform look */
+  text-decoration: none;            /* No underline */
+  margin: 0 10px;                   /* Space between links */
+}
+nav a:hover {
+  color: #e6c200;                   /* Yellow when hovered for contrast */
+}
+
+/* Main content */
+main {
+  padding: 20px;                    /* Space around text */
+  margin-bottom: 80px;              /* Prevent footer overlap with fixed footer */
+}
+
+/* Container for centering content */
+.container {
+  width: 90%;           /* Fill most of the screen */
+  max-width: 1100px;    /* Don’t stretch too wide */
+  margin: 0 auto;       /* Center horizontally */
+}
+
+/* Extra styleing*/
+
+/* Bigger welcome text on Home page */
+.welcome-text {
+  font-size: 1.3rem;     /* Larger text size */
+  font-weight: bold;     /* Make it stand out */
+  color: #013220;        /* Dark green */
+}
+
+/* Borders for project sections */
+main h3 {
+  border: 2px solid #013220;   /* Green border */
+  padding: 10px;               /* Space inside */
+  margin-top: 20px;            /* Space above each project */
+  border-radius: 6px;          /* Rounded corners */
+  background-color: #ffffff;   /* White background for contrast */
+}
+
+/* About page photo & video styling */
+img.profile-photo, video.intro-video {
+  display: block;              /* Put on their own line */
+  margin: 20px auto;           /* Center horizontally */
+  border: 2px solid #013220;   /* Green border */
+  border-radius: 6px;          /* Rounded corners */
+  background-color: #ffffff;   /* White box behind */
+  padding: 5px;                /* Small padding around */
+  max-width: 100%;             /* Responsive scaling */
+}
+
+/*Footer*/
+
+/* Footer used code form W3Schools: https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+footer {
+  position: fixed;       /* Always visible at bottom of page */
+  left: 0;
+  bottom: 0;
+  width: 100%;           /* Stretch across the screen */
+  background-color: #013220;  /* Dark green */
+  color: white;          /* White text */
+  text-align: center;    /* Center footer text */
+  padding: 10px;         /* Space inside footer */
+}
+
+/* Links inside footer */
+footer a {
+  color: #e6c200;        /* Yellow links */
+  text-decoration: none; /* No underline */
+}
+footer a:hover {
+  color: #ffffff;        /* White on hover */
+}
+
+/* Forms (Contact Page) */
+form {
+  display: block;        /* Each elemnt on its own line */
+  margin-top: 20px;
+}
+label {
+  display: block;        /* Label above input */
+  margin-top: 10px;
+}
+input, textarea {
+  width: 100%;           /* Stretch across page/container */
+  padding: 8px;          /* Space inside input */
+  margin-top: 5px;       /* Gap between label and box */
+  border: 1px solid #ccc;/* Light border */
+  border-radius: 4px;    /* Rounded corners */
+}
+input[type="submit"] {
+  background-color: #013220; /* Dark green */
+  color: white;              /* White text */
+  border: none;
+  cursor: pointer;           /* Hand pointer */
+  margin-top: 10px;
+}
+input[type="submit"]:hover {
+  background-color: #025f3d; /* Slightly lighter green from adobe */
+}
 
