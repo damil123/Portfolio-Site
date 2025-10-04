@@ -5,7 +5,7 @@ body {
   font-family: Arial, sans-serif;   /* The text font I chose */
   margin: 0;                        /* Removes default browser margins */
   padding: 0;                       /* Removes default browser padding */
-  background-color: #f5f5dc;        /* Beige background from adobe*/
+  background-color: #f5f5dc;        /* Beige background from adobe */
   color: #333333;                   /* Dark gray text font */
   line-height: 1.6;                 /* Spacing between lines */
 }
@@ -19,13 +19,11 @@ h1, h2, h3 {
 /* Header at top */
 header {
   background: linear-gradient(90deg, #013220, #025f3d); /* Green gradient */
-  color: white;                     
-  padding: 15px;                    
-  text-align: center;               
+  color: white;
+  padding: 15px;
+  text-align: center;
 }
-header h1 {
-  margin: 0;                        /* Remove extra space around heading */
-}
+header h1 { margin: 0; }
 
 /* Navigation links (menu items) */
 nav a {
@@ -33,8 +31,9 @@ nav a {
   text-decoration: none;            /* No underline */
   margin: 0 10px;                   /* Space between links */
 }
-nav a:hover {
-  color: #e6c200;                   /* Yellow when hovered for contrast */
+nav a:hover,
+nav a[aria-current="page"] {
+  color: #e6c200;                   /* Yellow when hovered / current */
 }
 
 /* Main content */
@@ -50,26 +49,28 @@ main {
   margin: 0 auto;       /* Center horizontally */
 }
 
-/* Extra styleing*/
+/* Extras for consistent styling */
 
-/* Bigger welcome text on Home page */
+/* Bigger welcome/intro text (use on Home & About first paragraph) */
+.lead,
 .welcome-text {
   font-size: 1.3rem;     /* Larger text size */
-  font-weight: bold;     /* Make it stand out */
+  font-weight: bold;
   color: #013220;        /* Dark green */
 }
 
-/* Borders for project sections */
-main h3 {
+/* Generic bordered box: add class="card" only where you want borders */
+.card {
   border: 2px solid #013220;   /* Green border */
   padding: 10px;               /* Space inside */
-  margin-top: 20px;            /* Space above each project */
+  margin: 16px 0;              /* Space around the card */
   border-radius: 6px;          /* Rounded corners */
   background-color: #ffffff;   /* White background for contrast */
 }
 
-/* About page photo & video styling */
-img.profile-photo, video.intro-video {
+/* About page photo & video styling (apply these classes in your HTML) */
+img.profile-photo,
+video.intro-video {
   display: block;              /* Put on their own line */
   margin: 20px auto;           /* Center horizontally */
   border: 2px solid #013220;   /* Green border */
@@ -77,11 +78,12 @@ img.profile-photo, video.intro-video {
   background-color: #ffffff;   /* White box behind */
   padding: 5px;                /* Small padding around */
   max-width: 100%;             /* Responsive scaling */
+  height: auto;                /* Keep aspect ratio */
 }
 
-/*Footer*/
+/* Footer (fixed at bottom) */
 
-/* Footer used code form W3Schools: https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+/* Footer used code from W3Schools: https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
 footer {
   position: fixed;       /* Always visible at bottom of page */
   left: 0;
@@ -93,24 +95,16 @@ footer {
   padding: 10px;         /* Space inside footer */
 }
 
-/* Links inside footer */
 footer a {
   color: #e6c200;        /* Yellow links */
   text-decoration: none; /* No underline */
 }
-footer a:hover {
-  color: #ffffff;        /* White on hover */
-}
+footer a:hover { color: #ffffff; } /* White on hover */
 
-/* Forms (Contact Page) */
-form {
-  display: block;        /* Each elemnt on its own line */
-  margin-top: 20px;
-}
-label {
-  display: block;        /* Label above input */
-  margin-top: 10px;
-}
+/*Forms (Contact Page)*/
+form { display: block; margin-top: 20px; }   /* Each element on its own line */
+label { display: block; margin-top: 10px; }  /* Label above input */
+
 input, textarea {
   width: 100%;           /* Stretch across page/container */
   padding: 8px;          /* Space inside input */
@@ -118,6 +112,7 @@ input, textarea {
   border: 1px solid #ccc;/* Light border */
   border-radius: 4px;    /* Rounded corners */
 }
+
 input[type="submit"] {
   background-color: #013220; /* Dark green */
   color: white;              /* White text */
@@ -125,7 +120,4 @@ input[type="submit"] {
   cursor: pointer;           /* Hand pointer */
   margin-top: 10px;
 }
-input[type="submit"]:hover {
-  background-color: #025f3d; /* Slightly lighter green from adobe */
-}
-
+input[type="submit"]:hover { background-color: #025f3d; } /* Slightly lighter green */
