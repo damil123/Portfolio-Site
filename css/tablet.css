@@ -1,0 +1,9 @@
+/* Tablet-specific styles */
+nav a {
+  margin: 0 15px;
+}
+
+img.profile-photo,
+video.intro-video {
+  max-width: 80%;
+}

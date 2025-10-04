@@ -1,0 +1,9 @@
+/* Laptop-specific styles */
+body {
+  font-size: 1rem; /* Default back */
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}

@@ -1,0 +1,14 @@
+/* Mobile-specific styles */
+header {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+nav a {
+  display: block;     
+  margin: 5px 0;
+}
+
+main {
+  padding: 10px;
+}

@@ -39,7 +39,7 @@ nav a[aria-current="page"] {
 /* Main content */
 main {
   padding: 20px;                    /* Space around text */
-  margin-bottom: 80px;              /* Prevent footer overlap with fixed footer */
+  margin-bottom: 120px;             /* Prevent footer overlap with fixed footer */
 }
 
 /* Container for centering content */
@@ -62,10 +62,17 @@ main {
 /* Generic bordered box: add class="card" only where you want borders */
 .card {
   border: 2px solid #013220;   /* Green border */
-  padding: 10px;               /* Space inside */
-  margin: 16px 0;              /* Space around the card */
+  padding: 16px;               /* Space inside */
+  margin: 20px 0;              /* Space around the card */
   border-radius: 6px;          /* Rounded corners */
   background-color: #ffffff;   /* White background for contrast */
+  box-sizing: border-box;      /* Includes padding in width calc */
+}
+
+/* Ensure form inputs inside cards don't stick out */
+.card form input,
+.card form textarea {
+  width: 95%;                  /* Shrink slightly so they stay inside the card */
 }
 
 /* About page photo & video styling (apply these classes in your HTML) */
@@ -101,9 +108,16 @@ footer a {
 }
 footer a:hover { color: #ffffff; } /* White on hover */
 
-/*Forms (Contact Page)*/
-form { display: block; margin-top: 20px; }   /* Each element on its own line */
-label { display: block; margin-top: 10px; }  /* Label above input */
+/* Forms (Contact Page) */
+form { 
+  display: block; 
+  margin-top: 20px; 
+}   /* Each element on its own line */
+
+label { 
+  display: block; 
+  margin-top: 10px; 
+}  /* Label above input */
 
 input, textarea {
   width: 100%;           /* Stretch across page/container */
@@ -111,6 +125,7 @@ input, textarea {
   margin-top: 5px;       /* Gap between label and box */
   border: 1px solid #ccc;/* Light border */
   border-radius: 4px;    /* Rounded corners */
+  box-sizing: border-box;/* Prevents overflow issues */
 }
 
 input[type="submit"] {
@@ -119,5 +134,7 @@ input[type="submit"] {
   border: none;
   cursor: pointer;           /* Hand pointer */
   margin-top: 10px;
+  padding: 10px 15px;        /* Bigger click area */
 }
 input[type="submit"]:hover { background-color: #025f3d; } /* Slightly lighter green */
+
