@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<!-- Responsive metags -->
 <html lang="en">
 <head>
   <meta charset="UTF-8"> 
-  <!-- used viewport for mobile responsiveness found from https://www.w3schools.com/tags/tag_meta.asp -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Damil Portfolio</title>
 
-<!-- linked to css files and added fluid diemensions for each kind of device -->
- <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/mobile.css" media="(max-width: 480px)">
-<link rel="stylesheet" href="css/tablet.css" media="(min-width: 481px) and (max-width: 768px)">
-<link rel="stylesheet" href="css/laptop.css" media="(min-width: 769px)">
+  <!-- linked to css files and added fluid dimensions for each kind of device -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 480px)">
+  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 481px) and (max-width: 768px)">
+  <link rel="stylesheet" href="css/laptop.css" media="(min-width: 769px)">
 </head>
 <body>
   <header>
-    <h1>Damil"s Portfolio</h1>
+    <h1>Damil's Portfolio</h1>
     <nav>
       <a href="index.html" aria-current="page">Home</a>
       <a href="about.html">About Me</a>
@@ -23,21 +21,20 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <main class="container">
     <h2>Welcome</h2>
     <p class="lead">Welcome to my portfolio site. Feel free to browse my pages.</p>
   </main>
-  <main>
-    <h2>Welcome</h2>
-    <p>Welcome to my portfolio site. Feel free to browse my pages</p>
-  </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> · <a href="mailto:damil.randhawa@ontariotechu.net">Damil Randhawa</a></p>
+    <p>&copy; <span id="year"></span> · 
+      <a href="mailto:damil.randhawa@ontariotechu.net">Damil Randhawa</a>
+    </p>
   </footer>
 
   <script>
-    //Automatically updates the year
+    // Automatically updates the year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>

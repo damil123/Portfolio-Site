@@ -20,23 +20,26 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Get in Touch 📲</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input id="name" name="name" type="text" placeholder="Enter your name" required>
+  <main class="container">
+    <h2>Get in Touch</h2>
 
-      <label for="email">Email:</label>
-      <input id="email" name="email" type="email" placeholder="Enter your email" required>
+    <div class="card">
+      <form>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
 
-      <label for="phone">Cell Phone #:</label>
-      <input id="phone" name="phone" type="tel" placeholder="123-456-7890" required>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
 
-      <label for="comments">Comments:</label>
-      <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+        <label for="phone">Cell No.:</label>
+        <input id="phone" name="phone" type="tel" placeholder="123-456-7890" required>
 
-      <input type="submit" value="Submit">
-    </form>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </main>
 
   <footer>
@@ -46,7 +49,7 @@
   </footer>
 
   <script>
-    // Updates the  year 
+    // Updates the year 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
